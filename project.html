@@ -3,17 +3,23 @@
     <head>
         <title>Cookie Licker</title>
         <script>
-            var money = 0
+            var multiplicateur= 1 
             function btn() {
-                document.getElementById('out').stepUp(1)
+                document.getElementById('out').stepUp(1*multiplicateur)
+            }
+            function btn2() {
+                document.getElementById('out').stepDown(200)
+                multiplicateur=multiplicateur+1
+                document.getElementById('out2').stepUp(1)
             }
         </script>
     </head>
     <body>
     
     <h2>COOKIE CLICKER</h2>
-    
-    <button type="button" onclick="btn()">Click me for money</button>
+    <img onmouseenter="btn()" onclick="btn()" width="200" height="200" src="/18 nov. 2024, 16_14(1).jpg" alt="frc logo">
     Money: <input id="out" type="number" step="1" min="0" disabled/>
+    <img onmouseenter="btn2()" onclick="btn2()" width="200" height="200" src="/18 nov. 2024, 16_14(1).jpg" alt="frc logo">
+    Moteur: <input id="out2" type="number" step="1" min="0" disabled/>
 </body>    
 </html>
