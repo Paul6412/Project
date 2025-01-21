@@ -20,6 +20,12 @@
                         multiplicateur=multiplicateur+10
                         document.getElementById('out3').stepUp(1)
                     }
+                    function btn4() {
+                    if (document.getElementById('out').value >= 10000) {
+                        document.getElementById('out').stepDown(10000)
+                        multiplicateur=multiplicateur+100
+                        document.getElementById('out4').stepUp(1)
+                    }
             }
         </script>
     </head>
@@ -32,5 +38,7 @@
     Moteur: <input id="out2" type="number" step="1" min="0" disabled/>
     <img onmouseenter="btn3()" onclick="btn3()" width="200" height="200" src="18 nov. 2024, 16_14(1).jpg" alt="frc logo">
     Frame: <input id="out3" type="number" step="1" min="0" disabled/>
+    <img onmouseenter="btn4()" onclick="btn4()" width="200" height="200" src="18 nov. 2024, 16_14(1).jpg" alt="frc logo">
+    Échelle: <input id="out4" type="number" step="1" min="0" disabled/>
 </body>    
 </html>
