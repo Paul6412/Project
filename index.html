@@ -20,11 +20,33 @@
                         multiplicateur=multiplicateur+10
                         document.getElementById('out3').stepUp(1)
                     }
+                }
                     function btn4() {
                     if (document.getElementById('out').value >= 10000) {
                         document.getElementById('out').stepDown(10000)
                         multiplicateur=multiplicateur+100
                         document.getElementById('out4').stepUp(1)
+                    }
+                }
+                    function btn5() {
+                    if (document.getElementById('out').value >= 1000000) {
+                        document.getElementById('out').stepDown(1000000)
+                        multiplicateur=multiplicateur+1000
+                        document.getElementById('out5').stepUp(1)
+                    }
+                }
+                    function btn6() {
+                    if (document.getElementById('out').value >= 100000000) {
+                        document.getElementById('out').stepDown(100000000)
+                        multiplicateur=multiplicateur+10000
+                        document.getElementById('out6').stepUp(1)
+                    }
+                }
+                    function btn6() {
+                    if (document.getElementById('out').value >= 10000000000) {
+                        document.getElementById('out').stepDown(10000000000)
+                        multiplicateur=multiplicateur+100000
+                        document.getElementById('out6').stepUp(1)
                     }
             }
         </script>
@@ -35,10 +57,16 @@
     <img onmouseenter="btn()" onclick="btn()" width="200" height="200" src="18 nov. 2024, 16_14(1).jpg" alt="frc logo">
     Money: <input id="out" type="number" step="1" min="0" disabled/>
     <img onmouseenter="btn2()" onclick="btn2()" width="200" height="200" src="18 nov. 2024, 16_14(1).jpg" alt="frc logo">
-    Moteur: <input id="out2" type="number" step="1" min="0" disabled/>
+    Moteur 200: <input id="out2" type="number" step="1" min="0" disabled/>
     <img onmouseenter="btn3()" onclick="btn3()" width="200" height="200" src="18 nov. 2024, 16_14(1).jpg" alt="frc logo">
-    Frame: <input id="out3" type="number" step="1" min="0" disabled/>
+    Frame 1000: <input id="out3" type="number" step="1" min="0" disabled/>
     <img onmouseenter="btn4()" onclick="btn4()" width="200" height="200" src="18 nov. 2024, 16_14(1).jpg" alt="frc logo">
-    Échelle: <input id="out4" type="number" step="1" min="0" disabled/>
+    Échelle 10000: <input id="out4" type="number" step="1" min="0" disabled/>
+    <img onmouseenter="btn5()" onclick="btn5()" width="200" height="200" src="18 nov. 2024, 16_14(1).jpg" alt="frc logo">
+    Pince 1000000: <input id="out5" type="number" step="1" min="0" disabled/>
+    <img onmouseenter="btn6()" onclick="btn6()" width="200" height="200" src="18 nov. 2024, 16_14(1).jpg" alt="frc logo">
+    Gobber 100000000: <input id="out6" type="number" step="1" min="0" disabled/>
+    <img onmouseenter="btn7()" onclick="btn7()" width="200" height="200" src="18 nov. 2024, 16_14(1).jpg" alt="frc logo">
+    Swerve 10000000000: <input id="out7" type="number" step="1" min="0" disabled/>
 </body>    
 </html>
